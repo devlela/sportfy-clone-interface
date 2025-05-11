@@ -1,2 +1,3 @@
-# sportfy-clone-interface
-Clone básico da interface do Spotify usando HTML e CSS.
+# Projeto 07 - Clone de Interface (Sportfy)
+
+Interface simples inspirada no Spotify usando apenas HTML.
