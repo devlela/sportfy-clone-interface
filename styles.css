@@ -1,1 +1,60 @@
+:root {
+    --bg-color: #121212;
+    --text-color: white;
+    --button-bg: #1DB954;
+    --button-hover: #1ED760;
+}
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.play-button, .theme-toggle {
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover, .theme-toggle:hover {
+    background-color: var(--button-hover);
+}
+
+.light-theme {
+    --bg-color: white;
+    --text-color: black;
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    .play-button, .theme-toggle {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
